@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="header-bar">
+                <ul class="navbar-links">
+                    <li>
+                        <a href="https://netflix.com" style="width: 7.16vw; height: 4vh; position: relative; top: 1.75vh; left: 3vw;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1280px-Netflix_2015_logo.svg.png" alt="" style="width: 7.16vw; height: 4vh;">
+                        </a>
+                    </li>
+                    <li class="nl-rest" style="margin-left: 5vw;">
+                        <div>Home</div>
+                    </li>
+                    <li class="nl-rest">
+                        <div>TV Shows</div>
+                    </li>
+                    <li class="nl-rest">
+                        <div>Movies</div>
+                    </li>
+                    <li class="nl-rest">
+                        <div>New & Popular</div>
+                    </li>
+                    <li class="nl-rest">   
+                        <div>Browse by Language</div>
+                    </li>
+                </ul>
+                <ul class="navbar-buttons">
+                    <li><button id="nvb-join">JOIN NOW</button></li>
+                    <li><button id="nvb-sign-in">SIGN IN</button></li>
+                </ul>
+            </div>
+            <div class="main-titles">
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner" style="height: 85vh;">
+                            <div class="carousel-item active">
+                                <img src="https://occ-0-2482-3647.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABWHbJx1YVqY-5HgkYyXagzj-Oe4Q-oGXCHYFEudHeFbB-smhke5nySM4FboZWcQLXVpg87NJAJOe0Mem2v3KV2N4lxUclHW3d4nc.jpg?r=bcc"
+                                alt="The Witcher" class="d-block w-100" style="filter: brightness(85%);">
+                                <div class="carousel-caption" >
+                                    <div class="main-title-info">
+                                        <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABfPGHZbJxzg-mkeObyaLAS8npfriewg1W5ZboIcZIvds1ROEElHjN1VjrBZNFJR9If779PZKqb648Hh8rVdSWBSN3Bm_30oFlwlwXnQ48DV3uMcGwNBaQ89bv-8-NVgRBW9SYoipRCDesRYkPds30cQQgV6VpoOdusdTl1xnXYioZl_jAW-trA.png?r=52a" 
+                                        alt="" style="width: 36vw;height: 16.5vh;">
+                                        <p class="title-caption" style="margin-left: 70px; color: #fff; font-weight: 500;">Geralt of Rivia, a mutated monster-hunter for hire, journeys toward his destiny in a turbulent world where people often prove more wicked than beasts.</p>
+                                        <button class="title-play-button"><img src="https://cdn-icons-png.flaticon.com/512/31/31128.png" style="width: 28px; height: 23px; margin-top: -4px;"> Play</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://occ-0-2482-3647.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABbFg8Rh5qt2kFbh1e_QAO5a-HhV1Pu7CzZ4u2dEtaDvoM1ldpzCg6GdS2XOGRcD6_vC1y4pQt_fAzj09PVc1Sa0Ho6b0yMsNeo9P.jpg?r=f3a"
+                                alt="Arcane" class="d-block w-100">
+                                <div class="carousel-caption">
+                                    <div class="main-title-info">
+                                        <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABem9bgtHAM5q8S2g4uAKY1CL6qkkQPqyVMqgRbAy_ccb_wyWNcDte09pcu5lkOSDP9TTW5i5cRM0NdM5uOziEjsGZmYNdQOqx20-lTvyMGkgWwIJLWMLHRgmpSw28cWgurcWbLcfuq7bOr0AyfU0adz9GeST97ItD8vqJfdx8KAZzYiqA2KdtQ.png?r=4ce" 
+                                        alt="" style="width: 43vw;height: 19.7vh;  margin-left: 65px;">
+                                    </div>
+                                    <p class="title-caption" style="color: #181818;">Amid the stark discord of twin cities Piltover and Zaun, two sisters fight on rival sides of a war between magic technologies and clashing convictions.</p>
+                                    <button id="button-arcane"><img src="https://cdn-icons-png.flaticon.com/512/31/31128.png" style="width: 28px; height: 23px; margin-top: -4px;"> Play</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABR-0Lc9Rb0KcYFqZQjxbkjec2XHUDBJrHsXV6sBxOOWniz_HQpGFrixOQXI6fpTax0Gdp0FlXW4PY8KS_bh4U0eJxVUMXv8-rReZ.jpg?r=c3a"
+                                alt="The Return of The King" class="d-block w-100">
+                                <div class="carousel-caption">
+                                    <div class="main-title-info" id="lotr-title">
+                                        <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABer-QvVZV9lzD_vUHHq0z8A0K8KKkUJLqDk10Nc3s-UYYFkbhxCl0aiLFJ6V_3l-DQFy-MEyiHOmScj85FelB95YEObt9_OrHld6tCpvhOac.png?r=c5a" 
+                                        alt="" style="width: 36vw;height: 31.6vh;">
+                                        <p class="title-caption" style="margin-left: 70px;">From the idyllic shire of the Hobbits to the smoking chasms of Mordor, Frodo Baggins embarks on his epic quest to destroy the ring of Sauron.</p>
+                                        <button class="title-play-button"><img src="https://cdn-icons-png.flaticon.com/512/31/31128.png" style="width: 28px; height: 23px; margin-top: -4px;"> Play</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://occ-0-2482-3647.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABeV1KEg0uYFEw52cFVC_IOZFLJUMuuFq_h0VeCtP0r_kiG4IDLJBT650MdvFPlPKA0Zk6W9EJl0fI0UI1eL1j2m2s8qQm3-2c3s3.jpg?r=86f"
+                                 alt="Edgerunner" class="d-block w-100" >
+                                <div class="carousel-caption">
+                                    <div class="main-title-info">
+                                        <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABYWW06_AXMSVM49APTcThb2CkqC-StVw6Utdsov1YHHzlqhXP9L834vsICkqEmIeu9eaJ9HOPNQ4D7cBbURv4iFdcgdgQinUAm-EMHcFlNs-yRzbNRNkAmzdny8POh2sRKpWSaKyqZmMGurnwciVPvXz0fxhl_1aXyvvCOnfajV3fwxczBUbgQ.png?r=cc7" 
+                                        alt="" style="width: 43vw;height: 19.7vh; margin-left: 65px;">
+                                        <p class="title-caption" style="margin-left: 70px;">In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw — an edgerunner.</p>
+                                        <button class="title-play-button"><img src="https://cdn-icons-png.flaticon.com/512/31/31128.png" style="width: 28px; height: 23px; margin-top: -4px;"> Play</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev" style="justify-content: flex-start; left: 3vw; width: 90px;">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next" style="justify-content: flex-end; right: 3vw; width: 90px;">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+            </div>
+            
+        </div>
+        <div class="body">
+            <div class="continue-watching-titles">
+                <h2 class="section-header">Continue Watching</h2>
+                <div class="wrapper">
+                    <section id="section0">
+                        <div class="item">
+                            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQHkeAMrI1k8_LKq5Aem7IH9Nahu8rEe2RMow_9VsdBz6rUKyw03F4XgoDSEtkqWhjy55iJODxfD5r5OQ6i-x1E1Tn33KMwfJ7IX1LPDJx4oUAnKJ4ZM23NwccRNPLe-7Y6i2yHrVNi4mZj8OGAe9fw1YEgxhf-jsReRKwVG3VCl4Cus9ThMr00CLTtkwabWABJg8bMiOqh7hgXL19L_zK92L5hhBVFn-jD-jTEBR4K-buJSNgETYzGCdULNELISdkumVbJlZtO614uGTQ8YiAe5T4OjbWDjs9gzjBRdD4glb4ltKL3N.jpg?r=90c" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQNFGhIRxlQF98k9d1abh5UbiSsKTpglABkWbz4gkU1j1lbZxWFPQV7KELXAMjTg9ZD0waQ_qOX1aMFDfjGJ6qWts4-731m8zsK1.jpg?r=739" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUEDc34W2_56WdJ0ckzpho4F-6NflFhJYzQ9DflmcfIp-tzL3wZ7ldhKymv8ocaARYAs-ohpAjB_X8dj3XmNhatFk-fQjN58AMiu.jpg?r=583" alt="">                        
+                        </div>
+                        <div class="item">
+                        </div>
+                    </section>  
+                </div>
+            </div>
+            <div class="popular-tv">
+                <h2 class="section-header">Popular TV Shows</h2>
+                <div class="wrapper">
+                    <section id="section1">
+                        <a href="#section2" class="arrow__btn">‹</a>
+                        <div class="item">
+                            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUEHASRVBii_hoC3_91pGZxuDpgrhIsfME7JYUrScO58bnWtBzFt8L4dZWma5_N6ogA1dqLkAj1sHXlUp3OIP1w03l2E9yKY90qN.jpg?r=85f" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABe1sk2CIWokmgeUa2eyPQTtIZTBqGKkDQEGAit-VddsVvK943CXT3DXclnizaYtUPjfC8RWe9kDezdcb7hxtlCex7IrziVIZgpPSOLj26XOi8_WLthf4yx2a_DYb1psU93m41Q.jpg?r=93f" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcHcEyjmbldWUKuCyBPynLGqODWCijc0nB7__IabmpFFSiSBBWFMgejkWG4YAY4I3_ahFVDUlCZidajC8BzG9pwVMzBNt2aHVKBUVQC2F5WmArB142ZFM6Gi2QJm2Ls2duEqPg.jpg?r=2d2" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTK2PJj2DFuFPjdUEFJwcnNe57g1iPdT438Uvkk9bu_-Dsi9b8QJ0LBGcp3q7w8CChciM6SYF0UimN4TZGRaa3FHXxc2U2kD3dga.jpg?r=663" alt="">
+                        </div>
+                        <a href="#section2" class="arrow__btn">›</a>
+                    </section>
+                    <section id="section2">
+                        <a href="#section1" class="arrow__btn">‹</a>
+                        <div class="item">
+                            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABe3PK6YBqRKdMDg9XtNyGaw5YfsyjCYCFJdPhfvfqLnJKrMe4MVg6ewfmv3qxll_G04BfiODE42oyvOnnn92MJEsrtJ9u4cusGCDlmKTVGF5PnoVGzfJqWlOQE0RCjTg2dxJVw.jpg?r=a07" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRhJxnf33ZVq6iVp29XAOVgccBKxL--MzKmH_YZ4c9G7FIeCGVbajXVvWDZZ0Kqzpyqto4nahsJeSFgsbMLZKFRQHmQV2zaNkpTzPllPfawaMNbvwXmp_zILgARxkmVBRkitFA.jpg?r=681" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcwsW3TMfxzZchgtS_-roUhDyWgqVa_DT9GLJjQZN2NzILjzGWtVBMUeAQusdvxFjvkxCO2EZEE7UECKGjKA1trwyAjB8M6VJl0A.jpg?r=696" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcoPqMLrC9ZzmSnk4LkRFHPd55ksckxlXzHO4xuT0N0iJlkJLQrp_tQTJfcw3NsvsqFDFgtgkp-s6I_yrqU64CEXMOCSnk4zKozJ0sU5m1cFPaTWxYIjLec9dXed9q8YSFLe_g.jpg?r=dd8" alt="">
+                        </div>
+                        <a href="#section1" class="arrow__btn">›</a>
+                    </section>   
+                </div>
+            </div>
+            <div class="popular-movies">
+                <h2 class="section-header">Popular Movies</h2>
+                <div class="wrapper">
+                    <section id="section3">
+                        <a href="#section4" class="arrow__btn">‹</a>
+                        <div class="item">
+                            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABckMjOU5AhTDaTEnhozhpVUnJ2ji0aBhTINCphY3PPsYHQj6fXrm6_ZTUntxr9rNHeRidYEpBEi_t1R-MDwdwiK8GOws3LqUlcIo.jpg?r=7f9">
+                        </div>
+                        <div class="item">
+                            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABalYgWpX1U8jZRhkrSK0q5bUECLK1PtBdrTlLGtPnstqkJWYzo7R614xQOxOgCQfyZSEJd4EpLcJKc03eCFFRdWm2rRxlMoG2aun.jpg?r=03d">
+                        </div>
+                        <div class="item">
+                            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcuvG84ewqqFp4gMaxJoZ8OtfPNyK4P1GaBC3kxBViZw2RIO4rzPdr8dKE4KLh-cjGQAW7Fs3iCqqvusFJakc6y-wNIU5kLkTWi1.jpg?r=6f2">
+                        </div>
+                        <div class="item">
+                            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABc-XeavM-a9M4q6L7DeQq6NFl-FgM_0OacK13Ix94diLHc4qUh567Y4qnKn-X6J6kmPvt9XLjUq4NV17_M3XgbLc1tri7YNcdzSQ.jpg?r=e88" alt="">
+                        </div>
+                        <a href="#section4" class="arrow__btn">›</a>
+                    </section>
+                    <section id="section4">
+                        <a href="#section3" class="arrow__btn">‹</a>
+                        <div class="item">
+                            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYbyaYkSLlAsg9p3ZasiyVDiycjvaqkalfKnC4pwb6Uq0ljqktbfNd9pG0RwYaA8a3gBtPumY4TXLYOvVwI8XX-OSFS58KG6DM7flqenCQR6lH4pjrnvHxnkBZO5jW82OpR8IA.jpg?r=dd9" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUwxfZHNMHdeQm5t2rfnDyoIbIGLM4Gwe1nRZdQTu9XOplIRV-GcTpm4Hm0MWxCYUd1xwnmnQyQvKdRaoL7S8UE2LOlXtA4GKO4H.jpg?r=627" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWAToFdQUl9aIsU8qnwOYefmT7ZKa7oiX2ObMaLZO0YSYceIQh9srX-Ijr37gO8u5fMK00N814OsBHLnvG1T1oKeRUyYXAECsVJn.jpg?r=ab4" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQg2W8h3Qb9SETb8tzHgV9CTRtcsehyGUOdaWvgdgijx0rmQ2jN8koxSE0q_dGU8eOFBJrus7Lhzi1e8u36PAL7MLs9MV8MRIN4r.jpg?r=7db" alt="">
+                        </div>
+                        <a href="#section3" class="arrow__btn">›</a>
+                    </section>   
+                </div>
+            </div>
+            <div class="anime-titles">
+                <h2 class="section-header">Anime</h2>
+                <div class="wrapper">
+                    <section id="section5">
+                        <a href="#section6" class="arrow__btn">‹</a>
+                        <div class="item">
+                            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaVq4MGjctYU6o67bsH2QL-g8qjjP1hC5aISL9SHvgCj2uFKf5NQa9mlauIcqMvIozldhvZgbU6z1GkcUB7ST82SS_mDyZbEoBPd.jpg?r=0ce" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZK8eFdfHmxwXHVwH6iThxQkqeJyNAnhOa4mQPkvms1yI8wERRzn_zqiF_4lF6OQ0x5qOw03UJ7MoAJuVkHvqQ_CJ77-uvXclbApi6jSAjUvZgTM_aFqX30KLL5AQJeiXzrlV6eDSh26Q6dZIrtW7uG74XAi24tO2xvsF2wiZ8K4-UcjaeF2q0fnxQsGPq7d4jeERUJvMn2A_oONC7Y3ajaCgk_cS54fxmq2IQCTEplhyzM1PSkKBS1Q2a8G5jCRiM6y6v5Cxz6JwkkjC5a7C0dcSw4juaJ4VdzS_MGwQfwscqTwl0Ne00fnAgke10oz3tEUgw7SP83Vrb8NwAtkrD0003CdLeGQx3obov0OTXNCjcdsI4d3B1x6Hw5Nn-R388hD4RRfJgEWnO9g0lfq7hmRS3_t49I_rdSZhIHsNFBfxQ.jpg?r=65d" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYrcXYlMELRZ_1cS0uN3F9KYVvJxVANmZOdkMgZbbNgHze9Kg4iThd91sIw5IzVAG3gHlPISZ7TppdlaFPjG77kL-K1V3OAX6ICYtZMhCaiEcFqdhRZ7mFqLH89_taJRZDN8iw.jpg?r=07e" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcIGMmwYc2gApwgnckv29wwGoNCTA0WqkDB53drbsBkEb9jPzrIxZLLk3jbl_ON2EAodSli2wIW8OWGdXdBG9GaVtrwqcU3js-51.jpg?r=888" alt="">
+                        </div>
+                        <a href="#section6" class="arrow__btn">›</a>
+                    </section>
+                    <section id="section6">
+                        <a href="#section5" class="arrow__btn">‹</a>
+                        <div class="item">
+                            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYGbsUulIRDzu3xd5jhvaA8LErWsdG_izb1IHka2IwwAEoGapd0VkGQVH9bFRAzHILfJ2HIs3O-zwuReaF1Nkk9ZU--kXCE4iPCp1ZmTSmWote6PAfMJiTJzRNO6PgAgv4YGDQ.jpg?r=8d8" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUSw0Oy0k4VaQ30wS7wIeV5d7SVpHNUHFU9Rf8iHhPWBvWj09qFIUznZhv5OnjZ1VruyyK_Ap47a5b6HVQ34N6cpVxM4RlVPqI2EKKHIVYfe0IViSlSrjuPSEcygEjVeLP3r6w.jpg?r=79e" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSKNuhLrTxXOGT7eYOCANDqBK_LPw2lFhTyRwzqtUQVE86LYbcWpDijiGpNb7Q2WY012nsxF9GBlCpeyTjyUqFwdzOSCrjF03aXrPVHn8WjmLBs5ISlpyLD8ZgfUot62k_8vuw.jpg?r=438" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABf2rXa9X6OwNt3_59eVkDaP-mobGH0PB8Ro7xIi4nVus8SswCfSHYBY28ml3Wuea6n7zY7W6CPqqQs-ZJ0MHqPsuxHS8HIXM_2_A.jpg?r=bc9" alt="">
+                        </div>
+                        <a href="#section5" class="arrow__btn">›</a>
+                    </section>   
+                </div>
+            </div>
+    </div>
+</body>
+</html>
