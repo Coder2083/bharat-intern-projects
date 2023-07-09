@@ -12,7 +12,7 @@
 .container {
     margin-top: 19vh;
     height: 60%;
-    background-color: rgb(174, 174, 174);
+    background-color: mistyrose;
     border-radius: 25px;
     box-shadow: 0 0 10px #18181898;
 }
@@ -20,14 +20,14 @@
     position: relative;
     height: 8vh;
     top: 7vh;
-    font-size: 18px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.28vh;
+    font-family:Arial, Helvetica, sans-serif;
 }
 .options li {
     position: relative;
     list-style: none;
     float: left;
-    margin-left: 25px;
+    margin-left: 1.627vw;
 }
 
 #inTemp {
