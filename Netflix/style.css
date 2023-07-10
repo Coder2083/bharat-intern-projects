@@ -29,11 +29,11 @@ body {
     color: #fff;
     text-decoration: none;
     text-align: center;
-    font: 12px;
+    font: 1.6vh;
 }
 .nl-rest {
     margin: 6px;
-    margin-right: 6px;
+    margin-right: 0.39vw;
     padding: 7px;
 }
 .navbar-links .nl-rest:hover {
@@ -58,7 +58,7 @@ body {
     color: #fff;
     text-decoration: none;
     text-align: center;
-    font-size: 13.5px;
+    font-size: 1.8vh;
     font-weight: 500;
     width: 8vw;
     height: 4.5vh;
@@ -93,50 +93,50 @@ body {
     box-shadow: 0 0 5px rgb(10, 10, 10);
 }
 .main-title-info {
-    margin-top: -700px;
-    margin-left: -150px;
+    margin-top: -93.83vh;
+    margin-left: -9.765vw;
     width: 43vw;
 }
 #lotr-title {
-    margin-top: -800px;
+    margin-top: -107.24vh;
 }
 .title-caption {
-    margin-top: 50px;
-    margin-left: -100px; 
+    margin-top: 6.7vh;
+    margin-left: -6.51vw; 
     width: 30vw; 
     font-family: Arial, Helvetica, sans-serif; 
-    font-size: 18px;
+    font-size: 2.413vh;
     color: #fff; 
     font-weight: 400; 
     text-align: left;
 }
 .title-play-button {
-    width: 130px;
-    height: 45px;
-    font-size: 20px;
+    width: 8.463vw;
+    height: 6.03vh;
+    font-size: 2.68vh;
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 5px ;
     background-color: #fff;
     border: 0;
-    margin-top: 40px;
-    margin-left: -375px;
+    margin-top: 5.362vh;
+    margin-left: -24.414vw;
 }
 .title-play-button:hover {
     border: 2px solid #181818;
     background-color: #1818183c; 
 }
 #button-arcane {
-    width: 130px;
-    height: 45px;
-    font-size: 20px;
+    width: 8.463vw;
+    height: 6.03vh;
+    font-size: 2.68vh;
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 5px ;
     background-color: #fff;
     border: 0;
-    margin-top: 40px;
-    margin-left: -1125px; 
+    margin-top: 5.362vh;
+    margin-left: -73.24vw; 
 }
 #button-arcane:hover {
     border: 2px solid #181818;
@@ -188,15 +188,15 @@ body {
     margin: 2.6vh 0;
    }
    .wrapper section img {
-    width: 334px;
-    height: 190px;
+    width: 21.745vw;
+    height: 25.469vh;
    }
    .wrapper section .item {
     padding: 0 2px;
     transition: 250ms all;
    }
    #section0 .item {
-    width: 334px;
+    width: 21.745vw;
    }
    .wrapper section .item:hover {
     margin: 0 5px;
@@ -208,7 +208,7 @@ body {
     text-decoration: none;
     font-size: 6em;
     background: black;
-    width: 60px;
+    width: 3.90vw;
     text-align: center;
     z-index: 1;
    }
@@ -225,7 +225,7 @@ body {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
    }
    
-   @media only screen and (max-width: 600px) {
+   @media only screen and (max-width: 39.0625vw) {
     a.arrow__btn {
     display: none;
     }
